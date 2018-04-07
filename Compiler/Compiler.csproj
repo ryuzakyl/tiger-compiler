@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{119FD787-303B-47D7-8C61-526408863E4C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Compiler</RootNamespace>
+    <AssemblyName>Compiler</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.2.0.6288, Culture=neutral, PublicKeyToken=f3e15d00e9a15fe5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libraries\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ANTLR\TigerAdaptor.cs" />
+    <Compile Include="ANTLR\TigerGrammarLexer.cs" />
+    <Compile Include="ANTLR\TigerGrammarParser.cs" />
+    <Compile Include="ANTLR\TigerLexer.cs" />
+    <Compile Include="ANTLR\TigerParser.cs" />
+    <Compile Include="AST\AccessNode.cs" />
+    <Compile Include="AST\AliasDeclarationNode.cs" />
+    <Compile Include="AST\AndOperationNode.cs" />
+    <Compile Include="AST\ArithmeticOperationNode.cs" />
+    <Compile Include="AST\ArrayCreationNode.cs" />
+    <Compile Include="AST\ArrayDeclarationNode.cs" />
+    <Compile Include="AST\ArrayIndexAccessNode.cs" />
+    <Compile Include="AST\AssignableExpressionNode.cs" />
+    <Compile Include="AST\AssignInstructionNode.cs" />
+    <Compile Include="AST\BinaryOperationNode.cs" />
+    <Compile Include="AST\BreakNode.cs" />
+    <Compile Include="AST\CallableCallNode.cs" />
+    <Compile Include="AST\CallableDeclarationNode.cs" />
+    <Compile Include="AST\ConstantExpressionNode.cs" />
+    <Compile Include="AST\ControlNode.cs" />
+    <Compile Include="AST\DeclarationNode.cs" />
+    <Compile Include="AST\DivisionOperationNode.cs" />
+    <Compile Include="AST\EqualityValueOperationNode.cs" />
+    <Compile Include="AST\EqualOperationNode.cs" />
+    <Compile Include="AST\ExpressionNode.cs" />
+    <Compile Include="AST\ExpressionSequenceNode.cs" />
+    <Compile Include="AST\ForLoopNode.cs" />
+    <Compile Include="AST\FunctionDeclarationNode.cs" />
+    <Compile Include="AST\GreaterEqualOperationNode.cs" />
+    <Compile Include="AST\GreaterThanOperationNode.cs" />
+    <Compile Include="AST\IfThenElseNode.cs" />
+    <Compile Include="AST\IfThenNode.cs" />
+    <Compile Include="AST\InferredVarDeclarationNode.cs" />
+    <Compile Include="AST\IntConstantNode.cs" />
+    <Compile Include="AST\LessEqualThanOperationNode.cs" />
+    <Compile Include="AST\LessThanOperationNode.cs" />
+    <Compile Include="AST\LetInEndNode.cs" />
+    <Compile Include="AST\LogicalOperationNode.cs" />
+    <Compile Include="AST\LValueIdNode.cs" />
+    <Compile Include="AST\MinusOperationNode.cs" />
+    <Compile Include="AST\MultiplicationOperationNode.cs" />
+    <Compile Include="AST\NilConstantNode.cs" />
+    <Compile Include="AST\NoAccessNode.cs" />
+    <Compile Include="AST\NotEqualOperationNode.cs" />
+    <Compile Include="AST\OperationNode.cs" />
+    <Compile Include="AST\OrOperationNode.cs" />
+    <Compile Include="AST\PlusOperationNode.cs" />
+    <Compile Include="AST\ProcedureDeclarationNode.cs" />
+    <Compile Include="AST\RecordCreationNode.cs" />
+    <Compile Include="AST\RecordDeclarationNode.cs" />
+    <Compile Include="AST\RecordDotAccessNode.cs" />
+    <Compile Include="AST\RelationalOperationNode.cs" />
+    <Compile Include="AST\StringConstantNode.cs" />
+    <Compile Include="AST\TigerProgramNode.cs" />
+    <Compile Include="AST\TypeDeclarationNode.cs" />
+    <Compile Include="AST\TypedVarDeclarationNode.cs" />
+    <Compile Include="AST\UnaryMinusOperationNode.cs" />
+    <Compile Include="AST\UnaryOperationNode.cs" />
+    <Compile Include="AST\ValueOperationNode.cs" />
+    <Compile Include="AST\ValueRefOperationNode.cs" />
+    <Compile Include="AST\VarDeclarationNode.cs" />
+    <Compile Include="AST\WhileLoopNode.cs" />
+    <Compile Include="CodeGenerators\Context.cs" />
+    <Compile Include="CodeGenerators\ContextTable.cs" />
+    <Compile Include="CodeGenerators\ILCodeGenerator.cs" />
+    <Compile Include="CodeGenerators\ILElementInfo.cs" />
+    <Compile Include="Errors\CompileError.cs" />
+    <Compile Include="Errors\Delegates.cs" />
+    <Compile Include="Errors\ErrorKind.cs" />
+    <Compile Include="SemanticStructures\BuiltInType.cs" />
+    <Compile Include="SemanticStructures\Scope.cs" />
+    <Compile Include="SemanticStructures\SemanticInfo.cs" />
+    <Compile Include="SemanticStructures\SymbolKind.cs" />
+    <Compile Include="SemanticStructures\SymbolTable.cs" />
+    <Compile Include="TigerCompiler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Graph.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Libraries\Antlr3.Runtime.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
