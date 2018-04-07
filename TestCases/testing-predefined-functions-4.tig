@@ -1,0 +1,7 @@
+let
+	var s1 := "Hola"
+	var s2 := "Mundo"
+in
+	printline(concat(s1,concat(" ", concat(s2, "!!"))));
+	getline()
+end

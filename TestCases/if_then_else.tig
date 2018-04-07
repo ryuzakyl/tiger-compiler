@@ -1,0 +1,12 @@
+let
+	var x:= 0
+	var y:= 1
+in
+	if x < y then 
+		printline("true") 
+	else 
+		printline("false");  
+	getline()
+end
+
+/*Esto está semánticamente correcto*/

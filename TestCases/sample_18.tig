@@ -1,0 +1,8 @@
+let
+	type MedalsArray = array of int
+	var m : MedalsArray := nil
+in
+	m := MedalsArray[3] of nil
+end
+
+/*Esto tiene que dar error pues nil no se puede convertir a int*/

@@ -1,0 +1,14 @@
+/*The Woman test*/
+
+let
+    var x := 0
+in
+    let
+        type Men = {wife : Woman}
+		var a:= 1
+        type Woman = {husband : Men}
+    in
+        2
+    end
+end
+

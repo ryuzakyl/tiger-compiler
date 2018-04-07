@@ -1,0 +1,17 @@
+let
+	function f() =
+		let
+			var a := 3
+			function inc() = a := a + 1
+		in
+			printi(a);
+			printline("");
+			inc();
+			printi(a);
+			printline("")
+		end
+in
+	f();
+	getline()
+end
+

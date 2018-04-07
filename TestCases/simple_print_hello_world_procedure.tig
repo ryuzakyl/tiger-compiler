@@ -1,0 +1,9 @@
+let
+	function imprimeHolaMundo() = 
+		printline("Hola Mundo!!")
+in
+	imprimeHolaMundo();
+	getline()
+end
+
+/*Esto es semánticamente correcto*/

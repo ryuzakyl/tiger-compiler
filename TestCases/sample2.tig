@@ -1,0 +1,10 @@
+let
+	function suma(a : int, b : int) = 
+		printi(a + b)
+in
+	suma(4,1);
+	printline("");
+	getline()
+end
+
+/*Esto es semánticamente correcto*/

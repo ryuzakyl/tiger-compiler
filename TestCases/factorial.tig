@@ -1,0 +1,16 @@
+let
+	var x := 1	
+	function factorial(n:int) : int =
+	 	if n = 1 then 
+			1
+		else 
+			n * factorial(n - 1)
+in
+	x := 5;
+	print("El valor de x es: "); printi(x);	printline("");
+	print("El valor de factorial es: "); printi(factorial(x)); printline("");
+	print("El valor de x continua siendo: "); printi(x); printline("");
+	getline()
+end
+
+

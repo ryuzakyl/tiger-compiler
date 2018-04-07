@@ -1,0 +1,6 @@
+let
+	var ascii := ord("Daniel")
+in
+	printi(ascii);
+	getline()
+end

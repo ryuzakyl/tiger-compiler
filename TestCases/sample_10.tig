@@ -1,0 +1,16 @@
+let
+	var cont := 0
+in
+	for i := 0 to 2 do
+	(
+		for j := 0 to 2 do
+		(	
+			printi(cont);
+			printline("");
+			cont := cont + 1
+		)
+	);
+	getline()
+end
+
+/*Debe imprimir los números del 0 al 8*/

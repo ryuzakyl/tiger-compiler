@@ -1,0 +1,32 @@
+let
+	type intArray = array of int
+	var a := intArray [10] of 0
+	var dimension := 10
+	var s :=" " 
+	function Burbuja(a:intArray) = 
+		(for i := 0 to dimension-1 do 
+			(for j :=i+1 to dimension-1 do
+				(if a[j] <= a[i] then Swap(a,i,j))))
+	function Swap(a:intArray , pos1:int , pos2:int) = 
+		let
+			var temp := a[pos1]
+		in
+			a[pos1] := a[pos2];
+			a[pos2] := temp	
+		end
+	function PrintArreglo(a:intArray) = 
+		for i := 0 to dimension-1 do
+		(
+			printi(a[i]);
+			printline("")
+		)
+		
+in
+	a[0] := 3; a[1] :=100; a[2] :=56; a[3] :=66; a[4] :=55; a[5] := 20; a[6] :=56; a[7] :=9; a[8] :=15; a[9] :=5 ;
+	PrintArreglo(a);
+	Burbuja(a);
+	print("\n");
+	PrintArreglo(a);
+	getchar()
+		
+end

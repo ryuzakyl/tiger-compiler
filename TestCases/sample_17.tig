@@ -1,0 +1,7 @@
+let
+	var i : int := 5
+in
+	i := "asd"
+end
+
+/*Para probar el AssignInstruction*/

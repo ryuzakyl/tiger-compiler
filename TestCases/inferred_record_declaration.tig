@@ -1,0 +1,8 @@
+let
+	type Person = { Name : string, Age : int }
+	var x := Person {Name = "Daniel", Age = 22} 
+in
+	/**/
+end
+
+/*Esto es semánticamente correcto*/

@@ -1,0 +1,8 @@
+let
+	type bArray = array of b
+	type b = bArray
+in
+	/**/
+end
+
+/*Esto no es semánticamente correcto*/

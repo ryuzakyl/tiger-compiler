@@ -1,0 +1,11 @@
+let
+	var x := 5
+	function incrementa(a:int,b:int) = 
+		printi(a + 1)
+in
+	incrementa(4,1);
+	printline("");
+	getline()
+end
+
+/*Esto es semánticamente correcto*/

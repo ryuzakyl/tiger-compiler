@@ -1,0 +1,9 @@
+let
+	type a = { Name : b }
+	type b = c
+	type c = d
+in
+	/**/
+end
+
+/*Esto es semánticamente incorrecto*/

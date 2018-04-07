@@ -1,0 +1,11 @@
+let
+type person = {name:string}
+var x:= person{name="daniel"}
+var y:= person{name="victor"}
+var z:= if x = y then x else y
+in
+print(z.name);
+printline("");  
+getline()
+end
+

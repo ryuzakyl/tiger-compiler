@@ -1,0 +1,40 @@
+let
+	type arrp1 = arrPerson
+	type arrPerson = array of person
+	type person = {name:string, age:int}
+	type arrInt = array of int
+	var i : int := 3
+	var str : string := "Hola Mundo"
+	var p : person := person{name = "Daniel", age = 22}
+	var cont := 0
+	var list : arrInt := arrInt[5] of (cont := cont + 1; cont)
+	var amigos : arrp1 := arrp1[5] of person{name = "Victor", age = (cont := cont + 1; cont + 22)}
+	function finalChange() = p.name := "Chuck"
+in
+	printi(i); printline("");
+	print(str); printline("");
+	print(concat(p.name, " ")); printi(p.age); printline("");
+	for j := 0 to 4 do 
+	(
+		print(concat(amigos[j].name, " "));
+		amigos[j].name := "Daniel"; 
+		printi(amigos[j].age); 
+		amigos[j].age := 21;
+		printi(list[j]); 
+		printline("") 
+	);
+	p.name := "Benny";
+	p.age := 23;
+	print(concat(p.name, " ")); printi(p.age); printline("");
+		for j := 0 to 4 do 
+	(
+		print(concat(amigos[j].name, " "));
+		printi(amigos[j].age); 
+		printi(list[j]); 
+		printline("") 
+	);
+	finalChange();
+	printline(p.name);
+	printline("Esta es otra prueba");
+	getline()
+end

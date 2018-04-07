@@ -1,0 +1,14 @@
+let
+	type a = array of int
+	type b = a
+in
+	let
+		type a = array of string
+		var x : b := nil
+		var y : a := nil
+	in
+		x = y
+	end
+end
+
+/*x e y son arrays pero no del mismo tipo*/

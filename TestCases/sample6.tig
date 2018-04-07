@@ -1,0 +1,33 @@
+let
+	var x:= 5
+	function suma(a:int) = 
+		if a = 0 then 
+		(
+			printi(a);
+			printline("")
+		)
+		else 
+		(
+			printi(a);
+			printline("");
+			suma(a-1)
+		)
+	var c:= x
+in
+	suma(x);
+	let
+		var c:= "Hola mundo!!"
+	in
+		printline(c)
+	end;
+	print("Este es el valor de c + x: ");
+	printi(c + x);
+	printline("");
+	getline()
+end
+
+
+
+
+
+

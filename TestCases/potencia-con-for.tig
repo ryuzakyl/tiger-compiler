@@ -1,0 +1,13 @@
+let
+	var base:=4
+	var exp:=2
+	var result:=1
+in
+	for i:=1 to exp do
+	(
+	 	result := result * base
+	);
+	print("2 ^ 4 = ");
+	printi(result);
+	getline()
+end

@@ -1,0 +1,11 @@
+let
+	var j := 0
+in
+	for i := 1 to 5 do
+	(
+		printi(i);
+		printline("")
+	);
+	getline()
+end
+

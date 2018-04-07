@@ -1,0 +1,10 @@
+let
+	var x := 2
+	var y := 3
+	function suma(a:int,b:int) : int = 
+		a + b
+in
+	printi(suma(x,y)); 
+	getline()
+end
+

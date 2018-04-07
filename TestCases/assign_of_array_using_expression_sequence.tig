@@ -1,0 +1,15 @@
+let
+	type arrint = array of int
+	var cont := 0
+	var x := arrint[5] of (cont:= cont + 1; cont)
+	var y := (x)
+in
+	printi(y[4]);
+	printline("");
+	getline()
+end
+
+
+
+
+

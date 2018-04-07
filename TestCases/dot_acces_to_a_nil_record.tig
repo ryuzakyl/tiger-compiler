@@ -1,0 +1,7 @@
+let
+    type persona={nombre:string, edad:int}
+    var p:persona:=nil
+in
+    print(p.nombre)
+end
+

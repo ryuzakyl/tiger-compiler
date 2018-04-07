@@ -1,0 +1,13 @@
+let
+	function mcd(a : int , b : int) :int = 
+		let
+			var q := a / b
+			var r := a - (q * b)
+		in
+			if r=0 then b else mcd(b,r)
+		end
+					
+in
+	printi(mcd(55,25));
+	getchar()
+end

@@ -1,0 +1,8 @@
+let
+	var x := ord("0")
+in
+	printi(x); printline("");
+	getline()
+end
+
+

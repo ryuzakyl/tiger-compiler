@@ -1,0 +1,8 @@
+let
+	type self = self
+	type arr = array of arr
+in
+	/**/
+end
+
+/*La declaración de alias o array self recursive no está permitida*/

@@ -1,0 +1,31 @@
+let
+	var x:= 5
+	
+	function suma(a : int) =
+		let
+			function imprime() = 
+			(
+				printi(a);
+				printline("")
+			) 
+		in
+			imprime()
+		end 
+	
+	var c := x
+in
+	suma(x);
+	let
+		var c:= "Hola mundo!!"
+		var x:= " Aunque seas bien complejo"
+	in
+		printline(concat(c,x))
+	end;
+	print("Este es el valor de c + x: ");
+	printi(c + x);
+	printline("");
+	getline()
+end
+
+/*Esto es semánticamente correcto*/
+

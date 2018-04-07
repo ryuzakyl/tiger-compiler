@@ -1,0 +1,12 @@
+let
+	function f(x:string) =
+		let
+			var a := 3
+		in
+			if x = "+" then (a := a + a; printi(a); printline(""))
+			else (a := a*a; f("+"); printi(a); printline(""))
+		end
+in
+	f("*");
+	getline()
+end

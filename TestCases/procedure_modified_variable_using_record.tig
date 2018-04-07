@@ -1,0 +1,14 @@
+let
+	type person = {name:string}
+	function f(x:string) =
+		let
+			var a := person{name = "daniel"}
+		in
+			if x = "+" then (a := person{name = "victor"}; print(a.name); printline(""))
+			else (a := person{name = "benny"}; f("+"); print(a.name); printline(""))
+		end
+in
+	f("*");
+	getline()
+end
+

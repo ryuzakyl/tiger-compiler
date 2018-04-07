@@ -1,0 +1,19 @@
+let
+	type miInt = int
+	function IsTrue() : string =
+		let
+			var x : miInt := 5
+		in
+			"hola mundo"
+		end
+	type Person = {Name : string, Age : miInt}
+	var p := Person{Name = "John Doe", Age = 23} 
+in
+	if p > nil 
+	then
+		getchar()
+	else
+		getchar()	
+end
+
+/*El error que debe dar es el de no poder convertir p, que es de tipo record, a string*/

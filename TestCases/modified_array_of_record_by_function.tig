@@ -1,0 +1,17 @@
+let
+	type arrperson = array of Person
+	type Person = { Name : string, Age : int }
+	var x: Person := Person {Name = "Daniel", Age = 22}
+	var y := arrperson[3] of x
+	function returnY() : arrperson = y 
+in
+	printline(x.Name);
+	returnY()[2].Name := "Victor";
+	print(y[2].Name);
+	printline("");
+	getline()
+end
+
+/*Esto es semánticamente correcto*/
+
+

@@ -1,0 +1,27 @@
+let
+	function mcd(a : int, b : int) : int =
+	(
+		let
+			var c := 0
+			var r := 0
+		in
+			c := a / b;
+			r := a - (c * b);
+			if r = 0 then
+				b
+			else
+				mcd(b, r)
+		end
+	)
+in
+	for i := 2 to 10 do
+	(
+		for j := 2 to 20 do
+		(
+			print("mcd("); printi(i); print(", "); printi(j); print(") = ");
+			printi(mcd(i,j));
+			printline("")
+		)
+	);
+	getline()
+end

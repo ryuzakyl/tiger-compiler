@@ -1,0 +1,10 @@
+let
+	var j := 0
+in
+	for i := 48 to 57 do
+	(
+		print(chr(i));
+		printline("")
+	);
+	getline() 
+end

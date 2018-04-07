@@ -1,0 +1,10 @@
+let
+	var x:= 0
+	var y:= 1
+in
+	printi(if x > y then 5 else 4);
+	printline("");  
+	getline()
+end
+
+/*Esto está semánticamente correcto*/

@@ -1,0 +1,9 @@
+let
+	var x:= 0
+in
+	while x < 5 do 
+		x := (if getline() = "hola mundo" then break; x := x + 1; x);
+	getline()
+end
+
+/*Estó está semánticamente MAL*/

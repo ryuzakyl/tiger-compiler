@@ -1,0 +1,18 @@
+let
+    type arrint = array of int
+	type arrp1 = arrpersona
+	type arrpersona = array of persona
+    type persona = { nombre:string, edad:int }
+    function g(x:int, y:string, r:arrint, p:persona, a:arrp1) = printline("Hola")	        
+in
+	g(23,"Hola", arrint[2] of 0, persona{nombre="daniel",edad=22}, arrpersona[2] of nil);
+    print("Hola");
+	print(" Hola de nuevo");
+	getline()
+end
+
+
+
+
+
+

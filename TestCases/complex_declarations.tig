@@ -1,0 +1,43 @@
+let
+    var a:=5
+    var b:="abcde"
+    function f()=
+	    let
+	        var c:=6
+	        var d:=7
+	        function h(n:int):int=
+	        if n<2 then 1 else h(n-1)
+	    in
+	    end
+    var c:=4
+    var e:="aslfdkj"
+in
+	let
+	    var a:=7
+	    var x:="sldfj"
+	    function g()=
+	    let
+	        var x:=0
+	        var y:=0
+	        var z:=-1
+	        function h()=
+		        let
+		            var m:=0
+		            var p:=5
+		            var t:=9
+		            function k(n:int):int=
+		            let
+		                var r:="asd"
+		                var q:="sdfsdf"
+		            in
+		                0
+		            end
+		        in
+		        end
+	    in
+	    end
+	in
+end;
+getline()
+end
+

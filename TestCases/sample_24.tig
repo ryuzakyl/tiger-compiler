@@ -1,0 +1,8 @@
+let
+	type a = b
+	type b = a
+in
+	/**/
+end
+
+/*Debe dar error semántico por ciclo en las declaraciones*/

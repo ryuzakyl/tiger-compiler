@@ -1,0 +1,6 @@
+let
+var value := not(0)
+in
+printi(value);
+getline()
+end

@@ -1,0 +1,25 @@
+let
+var x:= 5
+function suma(a:int) =
+	let
+		function imprime(b:int) = 
+		if b = 0 then (printi(b);printline(""))
+		else (printi(b);printline("");imprime(b-1))
+	in
+		imprime(a)
+	end 
+
+var c:= x
+in
+suma(x);
+	let
+		var d:= "Hola mundo!!"
+		var y:= " Aunque seas bien complejo"
+	in
+		printline(concat(d,y))
+	end;
+print("Este es el valor de c + x: ");
+printi(c + x);
+printline("");
+getline()
+end

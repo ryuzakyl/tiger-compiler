@@ -1,0 +1,6 @@
+let
+	type Person = {Name : string, Age : int, OtroCampoPaJoder : b}
+	type b = Person
+in
+	/**/
+end

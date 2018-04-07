@@ -1,0 +1,11 @@
+let
+    type arrint=array of int
+    type arr=array of arrint
+    var a:arr:=arr[5] of arrint[4] of 0
+in
+    a[4][3]:=1;
+	printi(a[4][3]);
+	printline("");
+	getline()
+end
+

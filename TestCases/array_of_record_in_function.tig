@@ -1,0 +1,12 @@
+let 
+   var count := 0
+   type person = { name:string, age:int }
+   type arrPerson = array of person
+   function newArray() : arrPerson = arrPerson[5] of person {name = "daniel", age = (count:= count + 1; count)}
+   var p : arrPerson := nil
+in
+  for i:= 0 to 4 do 
+	(p := newArray(); printi(p[i].age); printline(""));
+getline()
+end
+

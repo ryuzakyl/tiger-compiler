@@ -1,0 +1,8 @@
+let
+	var SUCCESS := 0
+	var ERROR := not(SUCCESS)
+in
+	printline("Hola Mundo");
+	exit(ERROR);
+	printline("Hola Mundo")
+end

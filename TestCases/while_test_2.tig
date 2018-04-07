@@ -1,0 +1,13 @@
+let
+	var x := 1
+in
+	while x < 6 do 
+	(
+		printline("Hola Mundo!!"); 
+	 	if x = 4 then break ; 
+	 	x := x + 1
+	);
+	getline()
+end
+
+/*Esto es semánticamente correcto*/

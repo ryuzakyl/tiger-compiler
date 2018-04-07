@@ -1,0 +1,17 @@
+let
+	/*type person = {name:string}*/
+	type arrint = array of int
+	function f(x:string) =
+		let
+			var a := arrint[3] of 0
+		in
+			if x = "+" then (a[0] := 1; printi(a[0]); printline(""))
+			else (a[0] := 2; f("+"); printi(a[0]); printline(""))
+		end
+in
+	f("*");
+	getline()
+end
+
+
+

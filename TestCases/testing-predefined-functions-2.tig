@@ -1,0 +1,7 @@
+let
+	var s := ""
+in
+	s := getline();
+	printline(s);
+	getline()
+end

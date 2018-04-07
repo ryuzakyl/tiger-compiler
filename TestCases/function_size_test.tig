@@ -1,0 +1,6 @@
+let
+	var length := size(concat("Hola","Mundo"))
+in
+	printi(length);
+	getline()
+end

@@ -1,0 +1,16 @@
+let
+	var x:= 0
+	var y:= 1
+in
+	if x > y then 
+	(
+		printi(x);
+		print(" < ");
+		printi(y);
+		printline("")
+	);
+	getline()
+end
+
+/*Esto es semánticamente correcto*/
+

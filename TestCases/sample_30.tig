@@ -1,0 +1,19 @@
+let
+	type a = array of int
+	type b = array of a
+	var x : b := nil
+in
+	x := b[3] of a[5] of 5;
+	for i := 0 to 2 do
+	(
+		for j := 0 to 4 do
+		(
+			printi(x[i][j]);
+			print(" ")
+		);
+		printline("")
+	);
+	getline()
+end
+
+/*Para probar ArrayCreation*/

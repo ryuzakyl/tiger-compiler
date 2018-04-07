@@ -1,0 +1,14 @@
+let
+	var s := "hola mundo"
+in
+	for i := 0 to 5 do
+	(
+		printline(s);
+		for j := 0 to 5 do
+		(
+			printline(s)
+		);
+		break
+	);
+	getline()
+end

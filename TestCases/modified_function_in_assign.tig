@@ -1,0 +1,13 @@
+let
+	type Person = { Name : string, Age : int }
+	type arrint = array of int
+	var x: Person := Person {Name = "Daniel", Age = 22}
+	var y := 0
+	function returnY() : int = y 
+in
+	printline(x.Name);
+	returnY() := 2;
+	printi(y);
+	printline("");
+	getline()
+end

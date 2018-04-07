@@ -1,0 +1,9 @@
+let
+	type Person = { Name : string, Age : int }
+	var p : Person := nil
+	function GetYo() : Person =
+		Person { Name = "Victor Manuel" , Age = 22 }
+in
+	printline(GetYo().Name);
+	getline()
+end

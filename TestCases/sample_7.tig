@@ -1,0 +1,11 @@
+let
+	type person = {name : string , age : int}
+	var p : person := person { name = "mimismo" , age = 22}
+in
+	print("je m'appelle ");
+	print(p.name);
+	print(" et j'ai ");
+	printi(p.age);
+	printline(" ans");
+	getline()
+end

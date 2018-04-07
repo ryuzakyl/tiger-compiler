@@ -1,0 +1,9 @@
+let
+	type iarr = array of int
+	var x := (iarr[3] of 4)[2]
+in
+	printi(x);
+	printline("");
+	getline()
+end
+

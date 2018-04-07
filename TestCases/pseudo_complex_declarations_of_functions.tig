@@ -1,0 +1,27 @@
+let
+    function f(a:int, b:int)=
+    let
+        var c:=0
+    in
+        c:=a+b
+    end
+    var a:=0
+    var b:=0
+in
+    while a<100 do
+    (
+       if b<>0 then break;
+       f(0,1)
+    );
+    for i:=0 to 100 do
+    let
+        function g():int=
+        (
+            printline("Dentro de g");
+            0
+        )
+    in
+        if i=50 then break
+    end        
+end    
+

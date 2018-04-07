@@ -1,0 +1,14 @@
+let
+	var y := "Hola Mundo!!"
+	var z := size(y)
+	var x := size("Daniel")
+	var w := size(concat("Daniel", " Alejandro"))
+in
+	printi(z);
+	printline("");
+	printi(x);
+	printline("");
+	printi(w);
+	printline("");
+	getline()
+end

@@ -1,0 +1,23 @@
+let
+	function int(s : string) : int =
+	(
+		let
+			var str_digit : string := nil
+			var digit := 0
+			var result := 0
+		in
+			while size(s) > 0 do
+			(
+				str_digit := substring(s,0,1); 
+				digit :=  ord(str_digit) - ord("0");
+				result := 10 * result + digit;
+				s := substring(s, 1, size(s) - 1)
+			);
+			result
+		end
+	)
+in
+	printi(int("328") + 2);
+	getline()
+end
+

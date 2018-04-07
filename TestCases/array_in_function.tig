@@ -1,0 +1,11 @@
+let 
+   var count := 0
+   type arrInt = array of int
+   function newArray() : arrInt = arrInt[5] of (count := count + 1; count)
+   var p : arrInt := nil
+in
+  for i:= 0 to 4 do 
+	(p := newArray(); printi(p[i]); printline(""));
+getline()
+end
+

@@ -1,0 +1,10 @@
+(
+	if 1 <> 2 
+	then 
+		printline("true") 
+	else
+		printline("false");
+	getline()
+)
+
+/*Esto es semánticamente correcto*/

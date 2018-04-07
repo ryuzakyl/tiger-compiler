@@ -1,0 +1,11 @@
+let
+	function f(i : int, s : string) : int =
+	(	
+		print(s);
+		i
+	)	
+in
+	f("hola mundo",0)
+end
+
+/*Para probar la semántica del function call*/

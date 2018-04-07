@@ -1,0 +1,18 @@
+let
+	type person = {name:string}
+	type arrperson = array of person
+	type arrp1 = arrperson
+	function f(x:string) =
+		let
+			var a := arrperson1[3] of person{name = "daniel"}
+		in
+			if x = "+" then (a[0] := person{name = "victor"}; print(a[0].name); printline(""))
+			else (a[0] := person{name = "benny"}; f("+"); print(a[0].name); printline(""))
+		end
+in
+	f("*");
+	getline()
+end
+
+
+

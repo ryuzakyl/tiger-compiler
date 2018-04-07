@@ -1,0 +1,21 @@
+let
+	var x := 2
+	var y := 3
+	var c := 0
+	var tmp := 0
+	function suma(a:int,b:int) :int = 
+	(
+		c := c + 1;
+		tmp := a;
+		a := b;
+		b:= tmp;
+		a + b
+	)
+in
+	printi(suma(x,y)); 
+	print(" x: "); printi(x); 
+	print(" y: "); printi(y); 
+	print(" c: "); printi(c); printline("");
+	getline()
+end
+

@@ -1,0 +1,16 @@
+let
+	type Person = { Name : string, Age : int }
+	type arrint = array of int
+	var x: Person := Person {Name = "Daniel", Age = 22}
+in
+	(arrint[3] of 0)[1] := 3;
+	Person {Name= "Victor", Age = 22}.Name := "Benny";
+	printline(x.Name);
+	printi(x.Age);
+	printline("");
+	getline()
+end
+
+/*Esto es semánticamente correcto*/
+
+

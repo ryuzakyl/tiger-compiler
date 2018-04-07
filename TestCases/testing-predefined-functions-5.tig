@@ -1,0 +1,10 @@
+let
+	var x := "Hola Mundo!!"
+	var y := substring(x, 0, 4)
+	var z := substring(x, 5, 5)
+	var w := substring(x, 10, 2)
+in
+	printline(x);
+	printline(concat(y, concat(" ", concat(z,w))));
+	getline()
+end

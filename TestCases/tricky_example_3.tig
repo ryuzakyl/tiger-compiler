@@ -1,0 +1,15 @@
+let
+	type person = {name:string}
+	var x := 
+	(let
+		var x := person {name = "daniel"}
+	 in
+		x
+	 end)
+in
+	printline(x.name);
+	getline()
+end
+
+
+

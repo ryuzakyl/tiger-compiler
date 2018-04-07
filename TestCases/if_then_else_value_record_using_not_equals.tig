@@ -1,0 +1,12 @@
+let
+type person = {age:int, amigo:person}
+var x:= person{age=23, amigo = person{age = 25, amigo = nil}}
+var y:= person{age=24, amigo = person{age = 26, amigo = nil}}
+var z:= if x <> y then x else y
+in
+printi(z.amigo.age);
+printline("");  
+getline()
+end
+
+

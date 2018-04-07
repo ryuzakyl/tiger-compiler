@@ -1,0 +1,19 @@
+let
+	type person = {name:string}
+	type arrperson = array of person
+	
+	var y := let
+				var x := arrperson[5] of person { name = "victor" }
+			 in
+			 	x
+			 end 
+in
+	print(y[4].name);
+	printline("");
+	getline()
+end
+
+
+
+
+

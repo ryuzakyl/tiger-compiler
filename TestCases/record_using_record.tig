@@ -1,0 +1,22 @@
+let
+type Esposa = { Name : string, Age : int, Esposo : Person }
+type Person = { Name : string, Age : int }
+var daniel: Person := Person {Name = "Daniel", Age = 22}
+var haydee: Esposa := Esposa {Name = "Haydee", Age = 24, Esposo = daniel} 
+in
+printline(daniel.Name);
+printi(daniel.Age);
+printline("");
+daniel.Name := "Daniel Alejandro";
+printline(daniel.Name);
+daniel.Age := 23;
+print("Nueva edad de Daniel: ");
+printi(daniel.Age);
+printline("");
+print("Nueva edad del esposo de Haydee: ");
+printi(haydee.Esposo.Age);
+printline("");
+printline(concat("Nuevo nombre del esposo de Haydee: ", haydee.Esposo.Name));
+printline("Este es el nuevo");
+getline()
+end

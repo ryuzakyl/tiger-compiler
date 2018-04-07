@@ -1,0 +1,20 @@
+let
+	var x:= 5
+	function suma(a:int) = 
+		if a = 0 then 
+		(
+			printi(a);
+			printline("")
+		)
+		else
+		(
+			printi(a);
+			printline("");
+			suma(a-1)
+		)
+in
+	suma(x);
+	getline()
+end
+
+/*Esto es semánticamente correcto*/

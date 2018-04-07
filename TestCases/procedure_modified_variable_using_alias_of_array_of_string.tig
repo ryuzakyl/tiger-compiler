@@ -1,0 +1,18 @@
+let
+	/*type person = {name:string}*/
+	type arrstring = array of string
+	type arrs2 = arrstring
+	function f(x:string) =
+		let
+			var a := arrs2[3] of "0"
+		in
+			if x = "+" then (a[0] := "1"; print(a[0]); printline(""))
+			else (a[0] := "2"; f("+"); print(a[0]); printline(""))
+		end
+in
+	f("*");
+	getline()
+end
+
+
+

@@ -1,0 +1,10 @@
+let
+	type arr1 = array of int
+	type arr2 = array of int
+	var x : arr1 := arr1[5] of 5
+	var y : arr2 := arr2[5] of 5
+in
+	x = y
+end
+
+/*A pesar de que arr1 y arr2 tienen la misma estructura son diferentes*/

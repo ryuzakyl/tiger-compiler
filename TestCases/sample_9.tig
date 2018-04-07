@@ -1,0 +1,10 @@
+let
+	var i := 5
+	var j := 5
+	var s : string := if i + j = 10 then "hola mundo" else nil
+in
+	printline(s);
+	getline()
+end
+
+/*Esto es para probar el if-then-else*/

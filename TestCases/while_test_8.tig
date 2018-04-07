@@ -1,0 +1,15 @@
+let
+	var x := 1
+in
+	while x < 5 do 
+	(
+		printline("Hola Mundo!!");
+		break; 
+		x := x + 1
+	);
+	printi(x);
+	printline("");
+	getline()
+end
+
+/*Esto es semánticamente correcto*/

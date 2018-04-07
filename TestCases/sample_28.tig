@@ -1,0 +1,14 @@
+let
+	var x := 1
+in
+	let
+		var x:= 2
+	in
+		x := x + 1;
+		printi(x)
+	end;
+	x := x + 1;
+	getline()
+end
+
+/*Probando ocultación de miembros*/

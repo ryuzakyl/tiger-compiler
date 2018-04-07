@@ -1,0 +1,29 @@
+let
+	var word := getline()
+	function palindrome(word: string) : int = 
+		let
+			var a : string := nil
+			var b : string := nil
+			var length := size(word) - 1
+			var result := 1
+		in
+			for i := 0 to length do
+			(	
+				a := substring(word, i, 1);
+				b := substring(word, length - i, 1);
+				if a <> b then (result := 0; break) 
+			);
+			result
+		end
+in	
+	while 1 do
+	(
+		if palindrome(word) then 
+			printline(concat(word, " es palindromo")) 
+		else
+			printline(concat(word, " no es palindromo"));
+		word := getline();
+		if word = "exit" then exit(1)
+	)
+end
+

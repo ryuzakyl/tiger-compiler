@@ -1,0 +1,6 @@
+let
+	type Person = {Parent : Person}
+in
+	/**/
+end
+

@@ -1,0 +1,6 @@
+let 
+    type list = {first: int, rest: list}
+    function readlist() : list = list{first=0, rest=nil}
+    var list1 := readlist()
+in
+end

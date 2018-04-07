@@ -1,0 +1,9 @@
+let
+	type arrString = array of string
+	var c := 47
+	var x := arrString[10] of chr((c := c + 1; c))
+in
+	for i := 0 to 9 do printline(x[i]);
+	getline()
+end
+

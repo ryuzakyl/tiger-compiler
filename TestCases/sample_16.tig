@@ -1,0 +1,14 @@
+let
+	var x : nil := nil
+	
+	function f() : nil =
+		nil
+		
+	var nil := 5
+	
+	type miNil = nil
+in
+	/**/
+end
+
+/*Esto da chorro de errores sintácticos con el nil*/

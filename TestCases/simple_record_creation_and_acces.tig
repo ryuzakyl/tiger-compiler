@@ -1,0 +1,11 @@
+let
+	type Person = { Name : string, Age : int }
+	var x: Person := Person {Name = "Daniel", Age = 22} 
+in
+	printline(x.Name);
+	printi(x.Age);
+	printline("");
+	getline()
+end
+
+/*Esto es semánticamente correcto*/

@@ -1,0 +1,20 @@
+let
+type amigos = array of Person
+type Person = { Name : string, Age : int, amistades : amigos }
+var c := 0
+var daniel: Person := Person {Name = "Daniel", Age = 22, amistades = amigos[3] of (Person{ Name = "Victor", Age = (c := c + 1; 22 + c), amistades = nil  })}
+in
+printline(daniel.Name);
+printi(daniel.Age);
+printline("");
+daniel.Name := "Daniel Alejandro";
+printline(daniel.Name);
+daniel.Age := 23;
+print("Nueva edad de Daniel: ");
+printi(daniel.Age);
+printline(" Este es el nuevo (probando lo de getConstructors)");
+print(concat("Nombre de amigo(1): ", daniel.amistades[0].Name));
+print(" Edad: "); printi(daniel.amistades[0].Age); printline("");
+getline()
+end
+

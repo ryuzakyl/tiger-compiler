@@ -1,0 +1,17 @@
+let
+	type miInt = int
+	function IsTrue() : miInt =
+		let
+			var x : miInt:= 5
+			var y : miInt:= 5
+		in
+			x + y
+		end
+	type miString = string
+in
+	if IsTrue() > 0 
+	then
+		getchar()
+	else
+		getchar()	
+end

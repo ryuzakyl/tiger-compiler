@@ -1,0 +1,10 @@
+let
+	type list = array of int
+	var l := list[10] of 15
+
+	function getList() : list =
+		list[10] of 20
+in
+	printi(getList()[4]);
+	getline()
+end

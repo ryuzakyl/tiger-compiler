@@ -1,0 +1,28 @@
+let
+	type arrp1 = arrpersona
+	type arrpersona = array of persona
+    type persona = { nombre:string, edad:int }
+	var cont := 0
+    function g(p:persona, a:arrp1) = 
+	( 
+		print(concat(p.nombre, " ")); 		
+		printi(p.edad); 
+		printline("");
+		for i := 0 to 1 do ( print(concat(a[i].nombre, " ")); printi(a[i].edad); printline("") )
+	)	        
+in
+	g(persona{nombre="daniel",edad=22}, arrpersona[2] of persona{nombre = "victor", edad = (cont := cont + 1; 22 + cont) });
+    print("Hola");
+	print(" Hola de nuevo");
+	print("Esto esta arreglado");
+	getline()
+end
+
+
+
+
+
+
+
+
+

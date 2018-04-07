@@ -1,0 +1,15 @@
+let
+	type Person = { Name : string, Age : int }
+	type arrint = array of int
+	var x: Person := Person {Name = "Daniel", Age = 22}
+	function returnX() : Person = x
+in
+	printline(x.Name);
+	returnX().Name := "Victor";
+	printline(x.Name);
+	getline()
+end
+
+/*Esto es semánticamente correcto*/
+
+

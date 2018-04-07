@@ -1,0 +1,10 @@
+let
+type person = {name:string, amigo:b}
+type b = person
+var x:= person{name = "daniel", amigo = b{name = "victor", amigo = nil}}
+in
+printline(x.name);
+printline(x.amigo.name);
+getline()
+end
+

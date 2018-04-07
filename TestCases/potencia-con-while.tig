@@ -1,0 +1,15 @@
+let
+	var base:=9
+	var exp:=3
+	var result:=9
+	var i:=1
+in
+	while i < exp do
+	(
+		result := result * base;
+		i:=i+1
+	);
+	print("9 ^ 3 = ");
+	printi(result);
+	getline()
+end

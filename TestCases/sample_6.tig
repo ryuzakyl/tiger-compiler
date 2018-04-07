@@ -1,0 +1,23 @@
+let
+	function suma(a : int, b : int): int =
+	(
+		printline("a + b");
+		a + b
+	)
+in
+	let
+		function suma(a : int, b : int): int =
+		(
+			printline("a * b");
+			a * b
+		)
+	in
+		printi(suma(5, 5));
+		printline("")
+	end;
+	
+	printline("");
+	printi(suma(5, 5));
+	printline("");
+	getline()
+end

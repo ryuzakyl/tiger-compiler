@@ -1,0 +1,18 @@
+/*
+	Aclaración / Modificación 7
+*/
+
+let
+	var a := 1
+	function x() =
+		a := a + 1
+in
+	printi(a);
+	printline("");
+	x();
+	printi(a);
+	printline("");
+	getline()
+end
+
+

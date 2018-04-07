@@ -1,0 +1,15 @@
+let
+	function hanoi(d : int, h : int, aux : int, cant : int) =
+		if cant = 1 then
+			/*print(str(d)+"-->"+str(h)+"\n")*/
+			(printi(d);print("-->");printi(h);printline(""))
+		else
+			(
+				hanoi(d, aux, h, cant - 1);
+				hanoi(d, h, aux, 1);
+				hanoi(aux, h, d, cant - 1)
+			)
+in
+	hanoi(1,3,2,4);
+	getline()
+end

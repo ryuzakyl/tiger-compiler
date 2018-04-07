@@ -1,0 +1,16 @@
+let
+    type arrint = array of int
+    type persona = { nombre:string, edad:int }
+    function f(a:int, b:string)=
+    let
+        function g(x:int, y:string, r:arrint, p:persona) = printline("Hola")
+    in
+		g(23,"Hola", arrint[2] of 0, persona{nombre="daniel",edad=22})
+    end            
+in
+	f(2,"mundo");
+    print("Hola");
+	getline()
+end
+
+

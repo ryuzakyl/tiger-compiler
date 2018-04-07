@@ -1,0 +1,8 @@
+let
+	function miprinti(i : int) =
+		printi(i)
+in
+	miprinti()
+end
+
+/* Esto es semánticamente incorrecto*/

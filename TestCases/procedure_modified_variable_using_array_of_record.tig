@@ -1,0 +1,13 @@
+let
+	var count := 0
+	type person = {name:string, amigos:b}
+	type arrperson = array of person
+	type b = arrperson
+	var x:= person{ name = "daniel", amigos = b[5] of person {name = "victor", amigos = nil} }
+in
+	printline(x.name);
+	printline(x.amigos[0].name);
+	getline()
+end
+
+

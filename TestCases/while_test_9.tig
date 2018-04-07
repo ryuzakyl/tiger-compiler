@@ -1,0 +1,17 @@
+/*
+	Aclaración / Modificación 7
+*/
+
+let
+	var x := 0
+in
+	while x < 5 do 
+	(
+		if getline() = "hola mundo" then
+			break;
+		x := x + 1;
+		x
+	);
+	printline("Press any key to continue . . .");
+	getline()
+end

@@ -1,0 +1,7 @@
+let
+	var s := "Hola Mundo"
+in
+	printline(s);
+	printline("Hola Mundo");
+	getline()
+end

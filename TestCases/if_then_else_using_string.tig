@@ -1,0 +1,10 @@
+let
+	var x:= "Hola"
+	var y:= "Mundo"
+in
+	print(if x < y then x else y);
+	printline("");  
+	getline()
+end
+
+/*Esto está semánticamente correcto*/

@@ -1,0 +1,14 @@
+let
+	type a = array of int
+	type b = a
+in
+	let
+		type a = array of string
+		var x := b[3] of 0
+		var y := a[3] of "0"
+	in
+		x = y
+	end
+end
+
+/*x e y son de tipos diferentes*/

@@ -1,0 +1,11 @@
+let
+	var x:= 0
+	var y:= 1
+in
+	if x < y then
+		if 2 = 2 then 
+			printline("Hola Mundo!!");  
+	getline()
+end
+
+

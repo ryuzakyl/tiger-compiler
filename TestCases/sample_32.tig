@@ -1,0 +1,13 @@
+let
+	type Person = { Name : string , Age : int }
+	var x : Person := Person { Name = "x", Age = 0 }
+in
+	let
+		type Person = { Name : string , Age : int }
+		var y : Person := Person { Name = "y", Age = 0 }
+	in
+		x = y
+	end
+end
+
+/*Aunque x e y sean de un record de tipo Person no están referenciando al mismo record*/
